@@ -33,45 +33,82 @@ const Logo = () => {
   return (
     <Link to="/" className="flex items-center gap-3 group cursor-pointer">
       <div className="relative w-12 h-12 flex items-center justify-center">
-        <div className="relative z-10 w-full h-full flex items-center justify-center scale-110">
+        {/* Ambient Glow */}
+        <motion.div 
+          animate={{ 
+            opacity: [0.3, 0.6, 0.3],
+            scale: [0.9, 1.1, 0.9]
+          }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute inset-0 bg-primary/20 rounded-full blur-2xl z-0"
+        />
+
+        <div className="relative z-10 w-full h-full flex items-center justify-center">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* Decisive Rising Monoliths */}
-            <motion.path 
-              initial={{ scaleY: 0, originY: 1 }}
-              animate={{ scaleY: 1 }}
-              transition={{ duration: 0.8, ease: "circOut" }}
-              d="M6 34L16 30V10L6 14V34Z" 
-              fill="currentColor" 
-              className="text-primary opacity-40"
+            {/* The Globe Sphere */}
+            <motion.circle 
+              cx="20" cy="20" r="16" 
+              stroke="currentColor" 
+              strokeWidth="0.5"
+              className="text-primary opacity-20"
             />
-            <motion.path 
-              initial={{ scaleY: 0, originY: 1 }}
-              animate={{ scaleY: 1 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "circOut" }}
-              d="M18 36L34 30V6L18 12V36Z" 
-              fill="currentColor" 
-              className="text-primary shadow-[0_0_20px_rgba(107,216,203,0.5)]"
+            
+            {/* Longitudinal Grid Lines */}
+            <motion.ellipse 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.4 }}
+              transition={{ duration: 1 }}
+              cx="20" cy="20" rx="6" ry="16" 
+              stroke="currentColor" 
+              strokeWidth="1"
+              className="text-primary"
             />
-            {/* Accent Line */}
+            <motion.ellipse 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.4 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              cx="20" cy="20" rx="12" ry="16" 
+              stroke="currentColor" 
+              strokeWidth="0.5"
+              className="text-primary"
+            />
+            
+            {/* Equatorial Lines */}
+            <motion.line 
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.4 }}
+              transition={{ duration: 1.5, delay: 0.5 }}
+              x1="4" y1="20" x2="36" y2="20" 
+              stroke="currentColor" 
+              strokeWidth="1"
+              className="text-primary"
+            />
+            
+            {/* Digital North - The Monolith Spark */}
+            <motion.rect 
+              animate={{ 
+                opacity: [0.4, 1, 0.4],
+                scale: [0.8, 1.2, 0.8]
+              }}
+              transition={{ duration: 2, repeat: Infinity }}
+              x="18.5" y="10" width="3" height="3" rx="1" 
+              fill="white"
+              className="shadow-[0_0_10px_#6BD8CB]"
+            />
+
+            {/* Orbit Trace */}
             <motion.path 
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 1.2, delay: 0.6 }}
-              d="M16 10L18 12M16 30L18 36" 
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.8 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+              d="M10 10C15 5 25 5 30 10C35 15 35 25 30 30C25 35 15 35 10 30C5 25 5 15 10 10Z" 
               stroke="white" 
-              strokeWidth="2" 
-              strokeLinecap="round"
+              strokeWidth="0.5"
+              strokeDasharray="4 4"
+              className="opacity-30"
             />
           </svg>
         </div>
-        <motion.div 
-          animate={{ 
-            opacity: [0.1, 0.2, 0.1],
-            scale: [1, 1.1, 1]
-          }}
-          transition={{ duration: 4, repeat: Infinity }}
-          className="absolute inset-0 bg-primary/20 rounded-full blur-2xl z-0"
-        />
       </div>
       <div className="flex flex-col">
         <span className="text-white font-headline font-black text-2xl tracking-tighter uppercase leading-none">
