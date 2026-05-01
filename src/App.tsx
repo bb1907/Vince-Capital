@@ -185,7 +185,7 @@ const Navbar = () => {
             
             <div className="absolute right-0 mt-2 w-40 bg-surface-container-highest/95 border border-white/10 rounded-2xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60] shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl translate-y-2 group-hover:translate-y-0">
               <div className="p-2 grid grid-cols-1 gap-1">
-                {(['TR', 'EN', 'NL', 'DE', 'ESP'] as const).map((l) => (
+                {(['EN', 'NL', 'TR', 'DE', 'ESP'] as const).map((l) => (
                   <button
                     key={l}
                     onClick={() => {
