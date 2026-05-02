@@ -221,7 +221,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <p className="text-center text-outline-variant text-[10px] md:text-xs uppercase tracking-[0.5em] mb-16 font-bold">{t('partners.title')}</p>
           <div className="flex flex-wrap justify-center md:justify-between items-center opacity-40 gap-10 md:gap-4">
-            {["INCE GLOBAL", "SOOLX", "YAPZEK.AI", "SMART TECH", "SHARONX"].map((partner) => (
+            {["VECNA GLOBAL", "INCE GLOBAL", "SOOLX", "YAPZEK.AI", "SMART TECH", "SHARONX"].map((partner) => (
               <span key={partner} className="text-2xl md:text-3xl font-black tracking-tighter text-on-surface-variant grayscale brightness-200">
                 {partner}
               </span>
