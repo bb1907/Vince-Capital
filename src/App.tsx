@@ -177,27 +177,22 @@ const Navbar = () => {
 
         <div className="flex items-center gap-6">
           <div className="relative group">
-            <button className="flex items-center gap-2 bg-surface-container-high/50 hover:bg-surface-container-highest px-3 py-2 rounded-xl border border-white/5 backdrop-blur-md text-xs font-black text-white transition-all shadow-lg active:scale-95">
-              <span className="text-base leading-none">{lang === 'TR' ? '🇹🇷' : lang === 'EN' ? '🇬🇧' : lang === 'NL' ? '🇳🇱' : lang === 'ESP' ? '🇪🇸' : '🇩🇪'}</span>
-              <span className="tracking-widest">{lang}</span>
-              <ChevronDown className="w-3 h-3 opacity-40 group-hover:rotate-180 transition-transform duration-300" />
+            <button className="flex items-center gap-1.5 px-2 py-1 text-[11px] font-bold text-white/50 hover:text-white transition-all tracking-[0.2em] uppercase origin-right">
+              <span>{lang}</span>
+              <ChevronDown className="w-3 h-3 opacity-30 group-hover:rotate-180 transition-transform duration-300" />
             </button>
             
-            <div className="absolute right-0 mt-2 w-40 bg-surface-container-highest/95 border border-white/10 rounded-2xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60] shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl translate-y-2 group-hover:translate-y-0">
-              <div className="p-2 grid grid-cols-1 gap-1">
+            <div className="absolute right-0 mt-2 w-24 bg-surface-container-highest/98 border border-white/10 rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60] shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-2xl translate-y-2 group-hover:translate-y-0">
+              <div className="p-1 flex flex-col">
                 {(['EN', 'NL', 'TR', 'DE', 'ESP'] as const).map((l) => (
                   <button
                     key={l}
                     onClick={() => {
                       setLang(l);
                     }}
-                    className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-[10px] font-black tracking-widest transition-all ${lang === l ? 'bg-primary text-on-primary shadow-lg shadow-primary/20' : 'text-on-surface-variant hover:bg-white/5 hover:text-white'}`}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-[10px] font-bold tracking-[0.15em] transition-all ${lang === l ? 'bg-primary/10 text-primary' : 'text-white/40 hover:bg-white/5 hover:text-white'}`}
                   >
-                    <div className="flex items-center gap-3">
-                      <span className="text-lg leading-none">{l === 'TR' ? '🇹🇷' : l === 'EN' ? '🇬🇧' : l === 'NL' ? '🇳🇱' : l === 'ESP' ? '🇪🇸' : '🇩🇪'}</span>
-                      {l}
-                    </div>
-                    {lang === l && <div className="w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_10px_white]" />}
+                    {l}
                   </button>
                 ))}
               </div>
