@@ -103,12 +103,22 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.newsletter': 'Bülten Aboneliği',
     'footer.newsletter.desc': 'Yatırım raporlarımızdan haberdar olun.',
     'footer.newsletter.placeholder': 'E-posta',
-    'footer.rights': 'Vince Capital. The Digital Monolith. vince.capital',
+    'footer.rights': 'VINCE CAPITAL. ALL RIGHTS RESERVED.',
     'footer.kvkk': 'KVKK',
     'footer.legal': 'Yasal Uyarı',
     'footer.cookies': 'Çerez Politikası',
     'common.explore': 'Keşfet',
-    'common.motto.sub': 'Yarının Dünyasını İnşa Ediyoruz'
+    'common.motto.sub': 'Yarının Dünyasını İnşa Ediyoruz',
+
+    // Legal Pages Content
+    'kvkk.title': 'KVKK Aydınlatma Metni',
+    'kvkk.content': 'Vince Capital olarak kişisel verilerinizin güvenliğine büyük önem veriyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, verileriniz hukuka ve dürüstlük kurallarına uygun olarak işlenmekte ve korunmaktadır. Veri sorumlusu sıfatıyla, verilerinizi yatırım süreçlerinin yönetimi ve yasal yükümlülüklerin yerine getirilmesi amacıyla saklıyoruz.',
+    
+    'legal.title': 'Yasal Uyarı',
+    'legal.content': 'Bu internet sitesinde yer alan her türlü bilgi, grafik, rapor ve görseller yalnızca bilgilendirme amaçlıdır. Vince Capital, bu bilgilerin eksiksizliği veya doğruluğu konusunda garanti vermez. Sitede yer alan hiçbir içerik yatırım tavsiyesi niteliği taşımaz. Sitenin kullanımı sonucu oluşabilecek doğrudan veya dolaylı maddi/manevi zararlardan Vince Capital sorumlu tutulamaz.',
+    
+    'cookies.title': 'Çerez Politikası',
+    'cookies.content': 'Web sitemizden en verimli şekilde faydalanabilmeniz için çerezler kullanıyoruz. Çerezler, site trafiğini analiz etmek ve kullanıcı deneyimini kişiselleştirmek amacıyla tarayıcınıza kaydedilen küçük veri dosyalarıdır. Tarayıcı ayarlarınızdan çerez kullanımını kısıtlayabilirsiniz, ancak bu durum sitenin bazı fonksiyonlarının çalışmasını etkileyebilir.'
   },
   EN: {
     // Nav
@@ -199,12 +209,22 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.newsletter': 'Newsletter Subscription',
     'footer.newsletter.desc': 'Be informed about our investment reports.',
     'footer.newsletter.placeholder': 'Email',
-    'footer.rights': 'Vince Capital. The Digital Monolith. vince.capital',
-    'footer.kvkk': 'KVKK',
+    'footer.rights': 'VINCE CAPITAL. ALL RIGHTS RESERVED.',
+    'footer.kvkk': 'GDPR',
     'footer.legal': 'Legal Notice',
     'footer.cookies': 'Cookie Policy',
     'common.explore': 'Explore',
-    'common.motto.sub': 'Architecting the Future'
+    'common.motto.sub': 'Architecting the Future',
+
+    // Legal Pages Content
+    'kvkk.title': 'GDPR (Data Protection)',
+    'kvkk.content': 'At Vince Capital, we attach great importance to the security of your personal data. In accordance with data protection regulations (GDPR), your data is processed and protected in accordance with the law and rules of honesty. As a data controller, we store your data for the purpose of managing investment processes and fulfilling legal obligations.',
+    
+    'legal.title': 'Legal Notice',
+    'legal.content': 'All information, graphics, reports and images on this website are for informational purposes only. Vince Capital does not guarantee the completeness or accuracy of this information. No content on the site constitutes investment advice. Vince Capital cannot be held responsible for any direct or indirect material/moral damages that may occur as a result of using the site.',
+    
+    'cookies.title': 'Cookie Policy',
+    'cookies.content': 'We use cookies so that you can benefit from our website in the most efficient way. Cookies are small data files saved to your browser to analyze site traffic and personalize the user experience. You can restrict the use of cookies from your browser settings, but this may affect the operation of some functions of the site.'
   },
   NL: {
     // Nav
@@ -295,12 +315,22 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.newsletter': 'Nieuwsbrief Abonnement',
     'footer.newsletter.desc': 'Blijf op de hoogte van onze investeringsrapporten.',
     'footer.newsletter.placeholder': 'E-mail',
-    'footer.rights': 'Vince Capital. De Digitale Monoliet. vince.capital',
-    'footer.kvkk': 'KVKK',
+    'footer.rights': 'VINCE CAPITAL. ALL RIGHTS RESERVED.',
+    'footer.kvkk': 'AVG',
     'footer.legal': 'Juridische Kennisgeving',
     'footer.cookies': 'Cookiebeleid',
     'common.explore': 'Ontdek',
-    'common.motto.sub': 'Architecten van de Toekomst'
+    'common.motto.sub': 'Architecten van de Toekomst',
+
+    // Legal Pages Content
+    'kvkk.title': 'AVG (Privacybeleid)',
+    'kvkk.content': 'Bij Vince Capital hechten wij groot belang aan de beveiliging van uw persogensgegevens. In overeenstemming met de Algemene Verordening Gegevensbescherming (AVG), worden uw gegevens verwerkt en beschermd in overeenstemming met de wet en de regels van eerlijkheid. Als verwerkingsverantwoordelijke bewaren wij uw gegevens ten behoeve van het beheer van investeringsprocessen en het voldoen aan wettelijke verplichtingen.',
+    
+    'legal.title': 'Juridische Kennisgeving',
+    'legal.content': 'Alle informatie, grafieken, rapporten en afbeeldingen op deze website zijn uitsluitend bedoeld voor informatieve doeleinden. Vince Capital garandeert de volledigheid of juistheid van deze informatie niet. Geen enkele inhoud op de site vormt beleggingsadvies. Vince Capital kan niet verantwoordelijk worden gehouden voor enige directe of indirecte materiële/morele schade die kan ontstaan als gevolg van het gebruik van de site.',
+    
+    'cookies.title': 'Cookiebeleid',
+    'cookies.content': 'Wij maken gebruik van cookies zodat u op de meest efficiënte wijze gebruik kunt maken van onze website. Cookies zijn kleine gegevensbestanden die in uw browser worden opgeslagen om het siteverkeer te analyseren en de gebruikerservaring te personaliseren. U kunt het gebruik van cookies beperken via uw browserinstellingen, maar dit kan de werking van sommige functies van de site beïnvloeden.'
   },
   DE: {
     // Nav
@@ -391,12 +421,22 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.newsletter': 'Newsletter-Abonnement',
     'footer.newsletter.desc': 'Informieren Sie sich über unsere Investmentberichte.',
     'footer.newsletter.placeholder': 'E-Mail',
-    'footer.rights': 'Vince Capital. The Digital Monolith. vince.capital',
-    'footer.kvkk': 'Datenschutz',
+    'footer.rights': 'VINCE CAPITAL. ALL RIGHTS RESERVED.',
+    'footer.kvkk': 'DSGVO',
     'footer.legal': 'Impressum',
     'footer.cookies': 'Cookie-Richtlinie',
     'common.explore': 'Entdecken',
-    'common.motto.sub': 'Architekten der Zukunft'
+    'common.motto.sub': 'Architekten der Zukunft',
+
+    // Legal Pages Content
+    'kvkk.title': 'DSGVO (Datenschutzerklärung)',
+    'kvkk.content': 'Wir bei Vince Capital legen großen Wert auf die Sicherheit Ihrer persönlichen Daten. In Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) werden Ihre Daten gemäß den gesetzlichen Bestimmungen und den Regeln der Redlichkeit verarbeitet und geschützt. Als Verantwortlicher speichern wir Ihre Daten zum Zweck der Verwaltung von Investitionsprozessen und zur Erfüllung gesetzlicher Verpflichtungen.',
+    
+    'legal.title': 'Impressum & Rechtliche Hinweise',
+    'legal.content': 'Alle Informationen, Grafiken, Berichte und Bilder auf dieser Website dienen ausschließlich zu Informationszwecken. Vince Capital übernimmt keine Garantie für die Vollständigkeit oder Richtigkeit dieser Informationen. Kein Inhalt auf der Website stellt eine Anlageberatung dar. Vince Capital kann nicht für direkte oder indirekte materielle oder moralische Schäden haftbar gemacht werden, die durch die Nutzung der Website entstehen könnten.',
+    
+    'cookies.title': 'Cookie-Richtlinie',
+    'cookies.content': 'Wir verwenden Cookies, damit Sie unsere Website so effizient wie möglich nutzen können. Cookies sind kleine Datendateien, die in Ihrem Browser gespeichert werden, um den Website-Verkehr zu analysieren und die Benutzererfahrung zu personaliseren. Sie können die Verwendung von Cookies in Ihren Browsereinstellungen einschränken, dies kann jedoch die Funktion einiger Website-Features beeinträchtigen.'
   },
   ESP: {
     // Nav
@@ -487,12 +527,22 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.newsletter': 'Suscripción al Boletín',
     'footer.newsletter.desc': 'Infórmese sobre nuestros informes de inversión.',
     'footer.newsletter.placeholder': 'Correo electrónico',
-    'footer.rights': 'Vince Capital. El Monolito Digital. vince.capital',
-    'footer.kvkk': 'Privacidad',
+    'footer.rights': 'VINCE CAPITAL. ALL RIGHTS RESERVED.',
+    'footer.kvkk': 'RGPD',
     'footer.legal': 'Aviso Legal',
     'footer.cookies': 'Política de Cookies',
     'common.explore': 'Explorar',
-    'common.motto.sub': 'Arquitectos del Futuro'
+    'common.motto.sub': 'Arquitectos del Futuro',
+
+    // Legal Pages Content
+    'kvkk.title': 'RGPD (Protección de Datos)',
+    'kvkk.content': 'En Vince Capital, damos gran importancia a la seguridad de sus datos personales. De acuerdo con el Reglamento General de Protección de Datos (RGPD), sus datos son procesados y protegidos de acuerdo con la ley y las reglas de honestidad. Como responsables del tratamiento, almacenamos sus datos con el fin de gestionar los procesos de inversión y cumplir con las obligaciones legales.',
+    
+    'legal.title': 'Aviso Legal',
+    'legal.content': 'Toda la información, gráficos, informes e imágenes de este sitio web tienen únicamente fines informativos. Vince Capital no garantiza la integridad o exactitud de esta información. Ningún contenido del sitio constituye asesoramiento de inversión. Vince Capital no se hace responsable de ningún daño material o moral directo o indirecto que pueda ocurrir como resultado del uso del sitio.',
+    
+    'cookies.title': 'Política de Cookies',
+    'cookies.content': 'Utilizamos cookies para que pueda beneficiarse de nuestro sitio web de la manera más eficiente. Las cookies son pequeños archivos de datos guardados en su navegador para analizar el tráfico del sitio y personalizar la experiencia del usuario. Puede restringir el uso de cookies desde la configuración de su navegador, pero esto puede afectar el funcionamiento de algunas funciones del sitio.'
   }
 };
 
